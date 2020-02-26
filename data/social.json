@@ -17,6 +17,12 @@
       "title": "GitHub",
       "icon": "fa-github",
       "url": "https://github.com/bluemax-io"
+    },
+    {
+      "type": "npm",
+      "title": "NPM",
+      "icon": "fa-npm",
+      "url": "https://www.npmjs.com/org/bluemax"
     }
   ]
 }

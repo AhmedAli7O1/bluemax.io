@@ -4,35 +4,35 @@ sections:
   - section_id: hero
     component: "hero_block.html"
     type: heroblock
-    title: Hero Section
-    image: images/5.jpg
+    title: BlueMax
+    image: images/isolated-layout.svg
     content: |-
-      This section can contain a subtitle or tagline. The recommended length is one to three sentences, but can be changed as you prefer.
+      Node.js and Typescript Framework for creating Amazing, Production ready Software.
     actions:
       - label: Get Started
-        url: "docs/index.html"
+        url: "docs"
   - section_id: features
     component: "features_block.html"
     type: featuresblock
     featureslist:
       - title: Documentation
         content: |-
-          Donec lobortis velit sed suscipit lobortis. Ut non quam metus. Nullam a maximus mi. Quisque justo nunc, sollicitudin euismod euismod at, tincidunt ut tellus. Vivamus rhoncus mattis varius.
+          Donec lobortis velit sed suscipit lobortis.
         actions:
           - label: Get Started
-            url: "docs/index.html"
-      - title: Blog
-        content: |-
-          Vestibulum a nunc ut eros condimentum posuere. Nullam dapibus quis nunc non interdum. Pellentesque tortor ligula, gravida ac commodo eu.
-        actions:
-          - label: View Posts
-            url: "blog/index.html"
-      - title: Style Guides
+            url: "docs"
+      - title: Tutorials
         content: |-
           Donec lobortis velit sed suscipit lobortis. Ut non quam metus. Nullam a maximus mi. Quisque justo nunc, sollicitudin euismod euismod at, tincidunt ut tellus. Vivamus rhoncus mattis varius.
         actions:
           - label: Learn More
             url: "/style-guide.html"
+      - title: Blog
+        content: |-
+          Vestibulum a nunc ut eros condimentum posuere. Nullam dapibus quis nunc non interdum. Pellentesque tortor ligula, gravida ac commodo eu.
+        actions:
+          - label: View Posts
+            url: "blog"
   - section_id: text-img
     component: "content_block.html"
     type: contentblock
