@@ -1,0 +1,29 @@
+name: Deploy
+
+on:
+  push:
+    branches:
+      - source  # default branch
+
+jobs:
+  build:
+    name: "deploy to github pages"
+    runs-on: ubuntu-latest
+
+    steps:
+    - uses: actions/checkout@v1
+
+    - name: install node v12
+      uses: actions/setup-node@v1
+      with:
+        node-version: 12
+    - run: npm install
+    - run: npm run build
+
+    - name: "GitHub Pages Deploy"
+      uses: peaceiris/actions-gh-pages@v3
+      env:
+        github_token: ${{ secrets.GITHUB_TOKEN }}
+        publish_dir: ./public
+        publish_branch: master
+        cname: bluemax.io
