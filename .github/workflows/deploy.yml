@@ -22,7 +22,7 @@ jobs:
 
     - name: "GitHub Pages Deploy"
       uses: peaceiris/actions-gh-pages@v3
-      env:
+      with:
         github_token: ${{ secrets.GITHUB_TOKEN }}
         publish_dir: ./public
         publish_branch: master
