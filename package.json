@@ -4,7 +4,7 @@
   "description": "A documentation theme for Stackbit",
   "main": "public/index.html",
   "scripts": {
-    "build": "unibit build",
+    "build": "unibit build && cp ./favicon.ico ./public/",
     "develop": "unibit develop",
     "start": "unibit develop",
     "test": "echo \"Error: no test specified\" && exit 1"

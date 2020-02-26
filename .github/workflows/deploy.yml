@@ -19,7 +19,6 @@ jobs:
         node-version: 12
     - run: npm install
     - run: npm run build
-    - run: cp ./favicon.ico ./public/
 
     - name: "GitHub Pages Deploy"
       uses: peaceiris/actions-gh-pages@v3
