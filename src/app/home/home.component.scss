@@ -9,6 +9,10 @@ section {
   margin: auto;
   padding: 20px;
 
+  .section-title {
+    margin: 30px 0 30px 0;
+  }
+
   &#navigation-section {
     .navigation {
       margin: auto;
@@ -131,6 +135,39 @@ section {
   }
 
   &#recent-posts-section {
+    .recent-posts {
+      margin: auto;
+      text-align: center;
 
+      .row {
+        justify-content: center;
+
+        .post-card {
+          margin: 10px;
+          padding: 0;
+          box-shadow: 0 3px 10px 0 rgba(76, 82, 103, 0.1);
+          background-color: #ffffff;
+          max-width: 350px;
+          max-height: 500px;
+
+          img {
+            border-radius: 3px 3px 0 0;
+            width: 100%;
+            object-fit: cover;
+          }
+
+          .post-body {
+            h3 {
+              margin-top: 20px;
+            }
+
+            p {
+              margin-top: 30px;
+              height: 150px;
+            }
+          }
+        }
+      }
+    }
   }
 }
