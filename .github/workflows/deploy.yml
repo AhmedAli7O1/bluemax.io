@@ -17,6 +17,8 @@ jobs:
       uses: actions/setup-node@v1
       with:
         node-version: 12
+
+    - name: deploy to github pages
       run: |
         npm install
         npm run deploy
