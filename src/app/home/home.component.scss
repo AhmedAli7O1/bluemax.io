@@ -1,0 +1,136 @@
+@import '../variables.scss';
+
+
+$section-color: linear-gradient(to right, #0072ff, #00c6ff);
+
+section {
+  min-height: 500px;
+  display: flex;
+  margin: auto;
+  padding: 20px;
+
+  &#navigation-section {
+    .navigation {
+      margin: auto;
+
+      .row {
+        justify-content: center;
+      }
+    }
+  }
+
+  &#quick-start-section {
+    background: $section-color;
+    color: #fff;
+
+    .quick-start {
+      margin: auto;
+
+      button {
+        font-weight: 700;
+        margin-left: 1em;
+        width: 150px;
+        height: 50px;
+        border-radius: 25px;
+        border-width: medium;
+        border-color: #ffffff;
+        color: $primary;
+        background-color: #ffffff;
+
+        &:hover {
+          background-color: #e0e4e900;
+          color: #ffffff;
+        }
+
+        &:active {
+          background-color: #ffffff;
+          border-color: #ffffff;
+          color: #00c6ff;
+        }
+      }
+    }
+  }
+
+  &#features-section {
+    .features {
+      margin: auto;
+
+      .row {
+        justify-content: center;
+
+        .info-card {
+          text-align: center;
+          padding: 0 30px 0 30px;
+
+          fa-icon {
+            font-size: 3rem;
+            color: $primary;
+          }
+
+          h3 {
+            margin-top: 2rem;
+            margin-bottom: 1rem;
+            color: $primary;
+          }
+        }
+      }
+    }
+  }
+
+  &#sponsor-section {
+    background: $section-color;
+    color: #ffffff;
+
+    .sponsor {
+      margin: auto;
+
+      .row {
+        justify-content: center;
+
+        .trufla-logo {
+          box-shadow: 0 10px 20px 0 #0555a9;
+          background-color: #ffffff;
+          margin-top: 30px;
+          height: 60px;
+          width: 155px;
+          border-radius: 10px;
+          padding: 10px 0 0 15px;
+
+          img {
+            width: 125px;
+            height: 40px;
+          }
+        }
+
+        .become-sponsor {
+          button {
+            font-weight: 700;
+            margin-left: 1em;
+            width: 170px;
+            height: 50px;
+            border-radius: 25px;
+            border-width: medium;
+            border-color: #ffffff;
+            color: $primary;
+            background-color: #ffffff;
+
+            &:hover {
+              background-color: #e0e4e900;
+              color: #ffffff;
+            }
+
+            &:active {
+              background-color: #ffffff;
+              border-color: #ffffff;
+              color: #00c6ff;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  &#recent-posts-section {
+
+  }
+}

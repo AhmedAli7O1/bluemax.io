@@ -1,0 +1,68 @@
+@import './variables.scss';
+
+.navbar-brand {
+  width: 200px;
+}
+
+.jc-between {
+  justify-content: space-between;
+}
+
+.jc-center {
+  justify-content: center;
+}
+
+footer {
+  border-top: 1px solid rgb(222, 229, 239);
+
+  .row {
+    min-height: 100px;
+    display: flex;
+    margin: auto;
+
+    .copyright {
+      margin: auto;
+      text-align: center;
+
+      p {
+        color: $taupe_gray;
+        margin: auto;
+
+        a {
+          text-decoration: none;
+          color: $primary;
+          font-size: 1em;
+          font-weight: 600;
+        }
+
+        fa-icon {
+          color: $primary;
+        }
+      }
+    }
+
+    .social {
+      margin: auto;
+      text-align: center;
+
+      a {
+        padding-left: 1em;
+        font-size: 1.3em;
+        color: $taupe_gray;
+
+        &:hover {
+          color: $primary;
+        }
+      }
+    }
+
+    .logo {
+      margin: auto;
+      text-align: center;
+
+      img {
+        width: 100px;
+      }
+    }
+  }
+}

@@ -1,0 +1,69 @@
+<nav class="navbar navbar-expand-lg navbar-light bg-light shadow fixed-top">
+  <div class="container">
+    <a class="navbar-brand" href="#">
+      <img src="assets/images/header-logo.svg" alt="Logo" />
+    </a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive"
+      aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarResponsive">
+      <ul class="navbar-nav ml-auto">
+        <li class="nav-item">
+          <a class="nav-link" routerLink="" routerLinkActive="active">Home
+
+          </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" routerLink="/docs" routerLinkActive="active">Docs</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" routerLink="/learn" routerLinkActive="active">Tutorials</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" routerLink="/blog" routerLinkActive="active">Blog</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" routerLink="/about" routerLinkActive="active">About</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<!-- <home></home> -->
+<router-outlet></router-outlet>
+
+<footer class="container-fluid bg-light">
+  <div class="row">
+    <div class="copyright col-sm-12 col-md-5">
+      <p>
+        Open Source Software made with <fa-icon [icon]="faHeart"></fa-icon> for the Node.js Community <br />
+        © <a href="#">BlueMax IO.</a> All rights reserved. <a href="https://github.com/ahmedali7o1">Ahmed Ali</a>
+      </p>
+    </div>
+    <div class="col-sm-12 col-md-2 logo">
+      <img src="/assets/images/footer-logo.svg" />
+    </div>
+    <div class="social col-sm-12 col-md-5">
+      <a href="#">
+        <fa-icon [icon]="faGithub"></fa-icon>
+      </a>
+      <a href="#">
+        <fa-icon [icon]="faNpm"></fa-icon>
+      </a>
+      <a href="#">
+        <fa-icon [icon]="faTwitter"></fa-icon>
+      </a>
+      <a href="#">
+        <fa-icon [icon]="faFacebook"></fa-icon>
+      </a>
+      <a href="#">
+        <fa-icon [icon]="faStackOverflow"></fa-icon>
+      </a>
+      <a href="#">
+        <fa-icon [icon]="faYoutube"></fa-icon>
+      </a>
+    </div>
+  </div>
+</footer>

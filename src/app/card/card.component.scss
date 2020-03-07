@@ -1,0 +1,85 @@
+@import '../variables.scss';
+
+
+.card {
+  color: #000;
+  padding: 20px;
+  text-decoration: none;
+
+  fa-icon {
+    font-size: 4em;
+    color: $primary;
+  }
+
+  h3 {
+    transition: color .1s;
+  }
+
+  &:focus, &:hover {
+    box-shadow: 0 10px 20px 0 rgba(108, 135, 135, .2);
+
+    fa-icon, h3 {
+      color: $primary;
+    }
+  }
+}
+
+.border-box {
+  box-sizing: border-box;
+}
+
+.rad-5 {
+  border-radius: 5px;
+}
+
+.rad-50 {
+  border-radius: 50%;
+}
+
+.block {
+  display: block;
+}
+
+.border {
+  border: 2px solid #ebf2f2;
+}
+
+.center {
+  text-align: center;
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes riseUp {
+  0% {
+    transform: translateY(100px);
+  }
+  to {
+    transform: translateY(0);
+  }
+}
+
+@keyframes shrink {
+  0% {
+    transform: scale(1);
+  }
+  to {
+    transform: scale(0);
+  }
+}
+
+@keyframes grow {
+  0% {
+    transform: scale(0);
+  }
+  to {
+    transform: scale(1);
+  }
+}

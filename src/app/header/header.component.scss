@@ -1,0 +1,254 @@
+@import '../variables.scss';
+
+.masthead {
+  font-family: $font;
+  height: 100vh;
+  min-height: 600px;
+  background: linear-gradient(to right, #0072ff, #00c6ff);
+  color: #ffffff;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+
+  .full-logo {
+    width: inherit;
+    height: inherit;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-image: url('/assets/images/full-logo.svg');
+    background-position: center;
+    background-size: cover;
+    animation: fullLogoFadeIn 4s ease-in-out;
+    opacity: 0;
+  }
+
+  .back-logo {
+    width: inherit;
+    height: inherit;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+
+    -webkit-animation: bgbgLogoFadeIn 3s ease-out;
+    -moz-animation: bgLogoFadeIn 3s ease-out;
+    -o-animation: bgLogoFadeIn 3s ease-out;
+    animation: bgLogoFadeIn 3s ease-in-out;
+
+    background-image: url('/assets/images/isolated-layout.svg');
+    background-position: center;
+    background-size: cover;
+    opacity: 0.15;
+  }
+
+  h1 {
+    font-size: 4em;
+    font-weight: 600 !important;
+  }
+
+  p.lead {
+    margin-top: 2rem;
+    font-size: 1.4em;
+  }
+
+  .button-group {
+    margin-top: 4rem;
+
+    button {
+      font-weight: 700;
+      margin-left: 1em;
+      width: 150px;
+      height: 50px;
+      border-radius: 25px;
+      border-width: medium;
+      border-color: #ffffff;
+      color: $primary;
+      background-color: #ffffff;
+
+      &:hover {
+        background-color: #e0e4e900;
+        color: #ffffff;
+      }
+
+      &:active {
+        background-color: #ffffff;
+        border-color: #ffffff;
+        color: #00c6ff;
+      }
+    }
+  }
+
+  .social {
+    margin-top: 5rem;
+
+    a {
+      margin-left: 20px;
+
+      fa-icon {
+        color: #ffffff;
+        font-size: 1.6em;
+
+        &:hover {
+          color: $timberwolf;
+        }
+      }
+    }
+  }
+
+  .scroll-down {
+    display: flex;
+    justify-content: center;
+
+    margin-top: 5rem;
+
+    .arrow {
+      position: absolute;
+      width: 28px;
+      height: 8px;
+      opacity: 0;
+      transform: scale3d(0.5, 0.5, 0.5);
+      animation: move 3s ease-out infinite;
+    }
+
+    .arrow:first-child {
+      animation: move 3s ease-out 1s infinite;
+    }
+
+    .arrow:nth-child(2) {
+      animation: move 3s ease-out 2s infinite;
+    }
+
+    .arrow:before,
+    .arrow:after {
+      content: ' ';
+      position: absolute;
+      top: 0;
+      height: 100%;
+      width: 51%;
+      background: #fff;
+    }
+
+    .arrow:before {
+      left: 0;
+      transform: skew(0deg, 30deg);
+    }
+
+    .arrow:after {
+      right: 0;
+      width: 50%;
+      transform: skew(0deg, -30deg);
+    }
+
+    .text {
+      display: block;
+      font-size: 12px;
+      color: #fff;
+      text-transform: uppercase;
+      white-space: nowrap;
+      opacity: .25;
+      animation: pulse 2s linear alternate infinite;
+    }
+  }
+}
+
+@-webkit-keyframes bgLogoFadeIn {
+  0% {
+    opacity: 1;
+  }
+
+  1% {
+    opacity: 1;
+  }
+
+  100% {
+    opacity: .15;
+  }
+}
+
+@-moz-keyframes bgLogoFadeIn {
+  0% {
+    opacity: 1;
+  }
+
+  1% {
+    opacity: 1;
+  }
+
+  100% {
+    opacity: .15;
+  }
+}
+
+@-o-keyframes bgLogoFadeIn {
+  0% {
+    opacity: 1;
+  }
+
+  1% {
+    opacity: 1;
+  }
+
+  100% {
+    opacity: .15;
+  }
+}
+
+@keyframes bgLogoFadeIn {
+  0% {
+    opacity: 0;
+  }
+
+  1% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: .15;
+  }
+}
+
+@keyframes fullLogoFadeIn {
+  0% {
+    opacity: 1;
+  }
+
+  1% {
+    opacity: 1;
+  }
+
+  100% {
+    opacity: 0;
+  }
+}
+
+
+
+
+@keyframes move {
+  25% {
+    opacity: 1;
+
+  }
+  33% {
+    opacity: 1;
+    transform: translateY(30px);
+  }
+  67% {
+    opacity: 1;
+    transform: translateY(40px);
+  }
+  100% {
+    opacity: 0;
+    transform: translateY(55px) scale3d(0.5, 0.5, 0.5);
+  }
+}
+
+@keyframes pulse {
+  to {
+    opacity: 1;
+  }
+}
